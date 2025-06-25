@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 
-// --- Configuration: backend API base URL ---
+/**
+ * Backend API base URL: All API calls should use this as prefix.
+ * This is set explicitly to the provided cloud backend.
+ */
 const BACKEND_URL =
-  process.env.REACT_APP_TTT_BACKEND_URL || "http://localhost:3001"; // Make sure this matches backend
+  "https://vscode-internal-02230-qa.qa01.cloud.kavia.ai:3001";
 
 // --- Util ----
 const emptyBoard = () => [
